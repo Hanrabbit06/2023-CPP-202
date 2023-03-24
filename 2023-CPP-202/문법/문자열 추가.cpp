@@ -10,13 +10,12 @@ using namespace std;
 
 int main(void) 
 {
-	char str1[30] = "suye";
-	char str2[30] = "Happy";
+	string str1 = "suye";
+	string str2 = "Happy";
 
-	//str2의 문자열을 str1(목적지)에 추가
-	strcat(str1, str2);
+	str1 = str1 + str2;
 
-	printf("%s \n", str1);
+	cout << str1 << endl;
 
 
 	return 0;
