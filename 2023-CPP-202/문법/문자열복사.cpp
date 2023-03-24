@@ -1,15 +1,15 @@
-﻿#include <stdio.h>
+﻿#include <iostream>
 #include <string.h>		//문자열 함수가 들어 있음
 
 int main(void) 
 {
-	char str1[30] = "";
-	char str2[30] = "suye";
+	std::string  str1;
+	std::string  str2 = "suye";
 
-	//str1에 str2의 내용을 집어귀넣겠다.
-	strcpy(str1, str2);
+	//str1에 str2의 내용을 집어넣겠다.
+	str1 = str2;
 
-	printf("%s \n", str1);
+	std::cout << str1 << std::endl;
 
 
 	return 0;
