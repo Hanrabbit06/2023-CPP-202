@@ -18,6 +18,15 @@ class Student {
 		string tel;
 		string department;
 		string address;
+
+		//class 멤버 함수를 가질 수 있다.
+		void print(void) {
+			cout << "학번 : " << studentId << endl;
+			cout << "이름 : " << name << endl;
+			cout << "전화번호 : " << tel << endl;
+			cout << "학과 : " << department << endl;
+			cout << "주소 : " << address << endl;
+		}
 };
 
 int main(void)
@@ -30,11 +39,7 @@ int main(void)
 	stu1.department = "뉴미디어소프트웨어";
 	stu1.address = "서울특별시 영등포구";
 
-	cout << "학번 : " << stu1.studentId << endl;
-	cout << "이름 : " << stu1.name << endl;
-	cout << "전화번호 : " << stu1.tel << endl;
-	cout << "학과 : " << stu1.department << endl;
-	cout << "주소 : " << stu1.address << endl;
+	stu1.print();
 
 	return 0;
 }
