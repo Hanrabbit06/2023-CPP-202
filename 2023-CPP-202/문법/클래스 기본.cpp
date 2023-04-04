@@ -12,16 +12,24 @@ class Student {
 	//일반적으로 문자열은 정수형 데이터보다 많은 메모리 공간을 요구하며
 	//정수는 비교연산을 한번에 할 수 있으나, 
 	//문자열은 글자수 만큼 반복하여 비교해야하기 때문에
-	public:
+	private:
 		int studentId;
 		string name;
 		string tel;
 		string department;
 		string address;
 
+public:
 		//생성자(constructor) : 객체를 생성될 때 호출되는 함수
 		//생성자를 정의하지 않으면 default로 매개변수가 없는 생성자가 정의된다.
-		//Student() {}
+	Student() {
+		studentId = 2217;
+		name = "한예월";
+		tel = "010-1234-5678";
+		department = "뉴미디어소프트웨어";
+		address = "서울특별시 영등포구";
+	}
+		
 
 		//class 멤버 함수를 가질 수 있다.
 		void print(void) {
@@ -37,11 +45,6 @@ int main(void)
 {
 	//자료형 :Student(class 생략 가능)
 	Student stu1;
-	stu1.studentId = 2217;
-	stu1.name = "한예월";
-	stu1.tel = "010-1234-5678";
-	stu1.department = "뉴미디어소프트웨어";
-	stu1.address = "서울특별시 영등포구";
 
 	stu1.print();
 
