@@ -25,14 +25,11 @@ class Student {
 
 		}
 
-		Student(int studentId, string name, string tel, string department, string address) {
-			//this : 객체 자기자신을 가리키는 포인터 (주소값)
-			//맴버변수와 매개변수가 이름이 같아도 구별가능
-			this->studentId = studentId;
-			this->name = name;
-			this->tel = tel;
-			this->department = department;
-			this->address = address;
+		Student(int _studentId, string _name, string _tel, string _department, string _address)
+			//멤버면수 초기화. const/참조형 멤버변수 사용가능
+			: studentId(_studentId), name(_name), tel(_tel),department(_department), address(_address)
+		{
+			
 		}
 
 		//class 멤버 함수를 가질 수 있다.
