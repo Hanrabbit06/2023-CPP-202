@@ -18,11 +18,6 @@ class Student {
 		// 생성자는 반환형을 쓰지 않는다.
 		//생성자를 정의하지 않으면 default로 매개변수가 없는 생성자가 정의된다.
 		Student() {
-			studentId = 2217;
-			name = "한예월";
-			tel = "010-1234-5678";
-			department = "뉴미디어소프트웨어";
-			address = "서울특별시 영등포구";
 
 		}
 
@@ -41,6 +36,12 @@ class Student {
 			cout << "학과 : " << department << endl;
 			cout << "주소 : " << address << endl;
 		}
+
+		void set_studentId(int _studentId) { studentId = _studentId; }
+		void set_name(string _name) { name = _name; }
+		void set_tel(string _tel) { tel = _tel; }
+		void set_department(string _department) { department = _department; }
+		void set_address(string _address) { address = _address; }
 
 	private:
 		int studentId;
@@ -63,11 +64,11 @@ int main(void)
 	//Student stu2 = Student(2210, "우엥", "010-0000-0000", "솦과", "미림어딘가");
 	//stu2.print();
 
-	Student stu3[2];
+	/*Student stu3[2];
 
 	for (int i = 0; i < 2; i++) {
 		stu3[i].print();
-	}
+	}*/
 	
 	//동적할당 : 실행시간(runtime)에 메모리 크기가 결정(메모리 heap영역)
 	//동적할당된 공간은 포인터로 접근한다.
@@ -76,6 +77,20 @@ int main(void)
 
 	////동적할당 해제(안하면 메모리 누수현상이 발생)
 	//delete stu3;
+
+	Student* stu4 = new Student[2];
+	stu4[0].set_name("조태성");
+	stu4[0].set_address("자취방");
+	stu4[0].set_studentId(0000);
+	stu4[0].set_department("제과제빵과");
+	stu4[0].set_tel("000-0000-0000");
+
+	stu4[1].set_name("서해봄");
+	stu4[1].set_address("자취방");
+	stu4[1].set_studentId(0000);
+	stu4[1].set_department("경제학과");
+	stu4[1].set_tel("000-0000-0000");
+
 
 	Student* stu4 = new Student[2];
 
