@@ -15,6 +15,7 @@ class Student {
 	//문자열은 글자수 만큼 반복하여 비교해야하기 때문에
 	public:
 		//생성자(constructor) : 객체를 생성될 때 호출되는 함수
+		// 생성자는 반환형을 쓰지 않는다.
 		//생성자를 정의하지 않으면 default로 매개변수가 없는 생성자가 정의된다.
 		Student() {
 			studentId = 2217;
@@ -72,5 +73,3 @@ int main(void)
 
 	return 0;
 }
-
-
