@@ -38,10 +38,8 @@ int main(void) {
 	//일반생성자 호출
 	MString str = MString("I will be back");
 
-
+	//복사생성자 호출
 	MString str2 = str;
-
-
 
 	return 0;
 }
