@@ -5,6 +5,11 @@ using namespace sf;
 int main(void) {
 	sf::RenderWindow window(VideoMode(640, 480), "Snake Game");
 
+	RectangleShape snake;
+	snake.setFillColor(Color::White);
+	snake.setPosition(100, 300);
+	snake.setSize(Vector2f(50,50));
+
 	while (window.isOpen()) {
 		Event e;
 		while (window.pollEvent(e))
@@ -14,6 +19,9 @@ int main(void) {
 				window.close();
 		}
 		window.clear();
+
+		window.draw(snake);
+
 		window.display();
 	}
 
