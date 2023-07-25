@@ -22,7 +22,7 @@ public:
 class Snake {
 
 public:
-	Snake(int dir, int length) : dir_(dir),length_(length)
+	Snake(int dir, int length) : dir_(dir), length_(length)
 	{}
 
 	int GetDir(void) { return dir_; }
