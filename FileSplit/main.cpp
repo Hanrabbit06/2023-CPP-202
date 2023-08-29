@@ -1,36 +1,8 @@
-#include <iostream>
+#include "animal.h"
+#include "dog.h"
+#include "cat.h"
 
 using namespace std;
-
-class Animla {
-public:
-	void bark(void)
-	{
-
-	}
-private:
-	int leg_num_;
-
-};
-
-class Dog : public Animla{
-public:
-	void bark(void) {
-		cout << "港港" << endl;
-
-	}
-private:
-	int speed;
-};
-
-class Cat : public Animla {
-public:
-	void bark(void) {
-		cout << "具克" << endl;
-	}
-private:
-	int claw;
-};
 
 int main(void)
 {
