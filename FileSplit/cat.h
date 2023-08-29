@@ -1,7 +1,6 @@
 #pragma once
 
-#include "animal.h"
-using namespace std;
+#include "all.h"
 
 class Cat : public Animla {
 public:
