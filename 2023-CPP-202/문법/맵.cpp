@@ -6,7 +6,7 @@ using namespace std;
 
 int main(void) 
 {
-	//key:분자열, value:정수
+	//key:문자열, value:정수
 	map<string, int> moving;
 
 	moving["번개맨"] = 1987;
