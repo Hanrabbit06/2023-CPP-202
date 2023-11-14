@@ -6,13 +6,16 @@ using namespace std;
 class Champ {
 public:
 	Champ(const string& name);
+	//static 멤버함수는 객체 생성없이도 호출가능하다.
 	static int get_cnt(void)
 	{
+		//non_static = 1; //<--에러, static 멤버함수에는 일반 멤버변수가 들어가서는 안된다.
 		return cnt_;
 	}
 
 private:
 	static int cnt_;
+	int non_static;
 };
 
 //static 멤버변수는 무조건 바깥에서 정의한다(const 같은거 제외)
