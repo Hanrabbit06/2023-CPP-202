@@ -33,7 +33,7 @@ int main(void)
 	//메모리에 cnt_ 변수는 한 개만 존재한다.
 	//cnt_의 최종값은? => 2
 
-	//ㅊ
+	//static 멤버함수는 객체를 생성하지 않아도 호출할 수 있다.
 	cout << Champ::get_cnt() << endl;
 
 	//cout << a->get_cnt() << endl;
