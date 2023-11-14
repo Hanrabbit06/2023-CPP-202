@@ -6,6 +6,10 @@ using namespace std;
 class Champ {
 public:
 	Champ(const string& name);
+	static int get_cnt(void)
+	{
+		return cnt_;
+	}
 
 private:
 	static int cnt_;
@@ -28,5 +32,11 @@ int main(void)
 	//Champ형 객체의 갯수는 2개
 	//메모리에 cnt_ 변수는 한 개만 존재한다.
 	//cnt_의 최종값은? => 2
+
+	//ㅊ
+	cout << Champ::get_cnt() << endl;
+
+	//cout << a->get_cnt() << endl;
+	//cout << b->get_cnt() << endl;
 	return 0;
 }
